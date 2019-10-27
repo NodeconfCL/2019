@@ -22,6 +22,11 @@ const Symbol = styled.span`
   font-size: 9rem;
   line-height: 1em;
   color: ${({ theme }) => theme.colors.green};
+  text-shadow: 0px 0px transparent;
+  transition: all 250ms;
+  &:hover {
+    text-shadow: 0px 0px 1px ${({ theme }) => theme.colors.light};
+  }
 `
 
 export default () => (
